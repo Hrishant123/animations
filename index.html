@@ -1,0 +1,57 @@
+<html>
+    <head>
+       <title>CSS ANIMATIONS</title>   
+       <style>
+        #ok{
+            width:200px;
+            height:200px;
+            background-color: red;
+            animation-name: dummy;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes dummy{
+            0%{
+                background-color: red;
+                left:0px;top:0px;
+            }
+            25%{
+                background-color: orange;
+                left:200px;top:0px;
+            }
+            50%{
+                background-color: yellow;
+                left:200px;top:200px;
+            }
+            75%{
+                background-color: rgb(197, 230, 131);
+                left:0px;top:200px;
+            }
+            100%{
+                background-color: rgb(161, 252, 25);
+                left:0px;top:0px;
+            }
+        }
+        body{
+            animation:dummy2;
+            animation-duration:5s;
+            animation-iteration-count: infinite;
+            background-size: 100% 100%;
+        }
+        @keyframes dummy2{
+            0%{
+                background-image: url('https://m.media-amazon.com/images/M/MV5BMjMxNjY2MDU1OV5BMl5BanBnXkFtZTgwNzY1MTUwNTM@._V1_FMjpg_UX1000_.jpg');
+            }
+            50%{
+                background-image: url('https://lumiere-a.akamaihd.net/v1/images/p_avengersinfinitywar_19871_cb171514.jpeg?region=0%2C0%2C540%2C810');
+            }
+            100%{
+                background-image: url('https://cdn.britannica.com/26/187026-138-00A23A77/science-fiction-powers-Marvel-Comics-Avengers.jpg?w=800&h=450&c=crop');
+            }
+        }
+       </style>
+    </head>
+    <body>
+        <div id="ok"></div>
+    </body>
+</html>
